@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="./styles/config.style.css">
+    <link rel="stylesheet" href="./styles/header.style.css">
+    <link rel="stylesheet" href="./styles/about.style.css">
+    <link rel="stylesheet" href="./styles/portfolio.style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about"><img src="./images/logo.png" alt="logo do site"></a>
+            <ul class="ul__about">
+                <li><a href="#portfolio"><span class="material-symbols-outlined">work</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <section class="main__about" id="about">
+            <div class="about__content">
+                <h1>Sobre Mim</h1>
+
+                <p>
+                    Meu nome é Igor, tenho 20 anos e sou o tipo de pessoa que conversa sobre qualquer assunto.
+                    Gosto de fazer piadas, tocar alguns instrumentos e conhecer pessoas. Curto filmes,
+                    músicas e comidas de todos os tipos.
+                    Procuro levar a vida com bom humor, valorizando as pessoas e os momentos que surgem pelo caminho.
+                    <br />
+                    <br />
+                    Não curto muito Front-End, tenho FrontEndfobia.
+                    <blockquote>
+                        <em>"Stay hungry, stay foolish." -Steve Jobs</em>
+                    </blockquote>
+                </p>                
+            </div>
+            <img src="./images/me.png" alt="It's me!">
+        </section><!-- about me -->
+
+        <section class="main__portfolio" id="portfolio">
+            <video src="./videos/reverse-shell.mp4" controls></video>
+            <div class="content__video">
+                <h1>Reverse-Shell</h1>
+                <p>
+                    Uma tentativa de realizar uma reverse shell em um ambiente controlado.
+                    No entanto, ocorreu um erro, pois a biblioteca DigiKeyboard, utilizada em conjunto com o Digispark ATtiny85,
+                    estava digitando o código da shell utilizando o layout de teclado US, que difere dos layouts PT-BR/PTB2,
+                    uma vez que determinados caracteres estão posicionados em locais diferentes.
+                </p>
+            </div>
+        </section><!-- portfolio -->
+    </main>
+</body>
+</html>
