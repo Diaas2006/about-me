@@ -1,28 +1,27 @@
+header{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
 nav{
     display: flex;
-    justify-content: space-between;
+    gap: 25vw;
     align-items: center;
-    padding: 0 3vw;
+    padding: 3vw 0;
 }
 
 nav img{
-    width: clamp(140px, 18vw, 220px);
+    width: clamp(30vw, 80vw, 50vw);
 }
 
- .ul__about li{
+nav li{
     list-style: none;
     display: flex;
     align-items: center;
 }
 
-.ul__about a{
-    color: #000;
-    padding: .75rem;
-    border-radius: 50%;
-    transition: .25s;
-}
-
-.ul__about a:hover{
-    background: #e2eafc;
-    color: #212529;
+nav span{
+    color: #e2eafc;
+    font-size: 2rem;
 }
