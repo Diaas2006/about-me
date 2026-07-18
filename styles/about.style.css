@@ -1,0 +1,29 @@
+.main__about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20vw;
+    width: 100%;
+    height: 100vh;
+    background: #fafafa;
+    background: radial-gradient(circle, rgba(250, 250, 250, 1) 0%, rgba(108, 117, 125, 0.61) 100%);
+}
+
+.about__title h1{
+    border: .75rem solid black;
+    padding: 1.3rem 3.5rem;
+    font-size: large;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+.about__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    width: 75%;
+    font-size: 1.2rem;
+    text-align: justify;
+}

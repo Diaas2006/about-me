@@ -1,7 +1,7 @@
 header{
     width: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav{
@@ -9,6 +9,23 @@ nav{
     gap: 25vw;
     align-items: center;
     padding: 3vw 0;
+}
+
+.nav-fixed {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color: #f3f7ff;
+    z-index: 0;
+}
+
+.nav-fixed.animate{
+    animation: in .5s forwards;
+}
+
+@keyframes in {
+    from { top: -100px; }
+    to { top: 0; }
 }
 
 nav img{
@@ -24,4 +41,33 @@ nav li{
 nav span{
     color: #e2eafc;
     font-size: 2rem;
+}
+
+.menu {
+    list-style: none;
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    width: 220px;
+    background: #1b1b1b;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    z-index: 1;
+}
+
+.menu li a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.menu li a:hover {
+    background: #333;
+}
+
+.menu-active {
+    display: block;
 }
