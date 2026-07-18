@@ -12,12 +12,12 @@ window.addEventListener("scroll", () => {
         nav.classList.add("nav-fixed");
         nav.classList.add("animate");
             
-        logo.src = "/images/logo.png";
+        logo.src = "../images/logo.png";
         spanMenu.style.color = "#0b090a";                             
     } else {
         nav.classList.remove("nav-fixed", "animate");
 
-        logo.src = "/images/logoWhite.png";          
+        logo.src = "../images/logoWhite.png";          
         spanMenu.style.color = "#e2eafc";                             
     }
 });
